@@ -1,0 +1,12 @@
+﻿@Html.DevExpress().GridView(settings => {
+    settings.Name = "gvProducts";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartialProducts" };
+
+    settings.KeyFieldName = "ProductID";
+
+    settings.Columns.Add("ProductID");
+    settings.Columns.Add("ProductName");
+    settings.Columns.Add("UnitPrice");
+
+    
+}).Bind(Model).GetHtml()
