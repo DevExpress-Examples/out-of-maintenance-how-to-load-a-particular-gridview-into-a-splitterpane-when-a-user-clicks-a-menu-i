@@ -1,0 +1,10 @@
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "gvCustomers";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartialCustomers" };
+
+    settings.KeyFieldName = "CustomerID";
+
+    settings.Columns.Add("CustomerID");
+    settings.Columns.Add("CompanyName");
+   
+}).Bind(Model).GetHtml()

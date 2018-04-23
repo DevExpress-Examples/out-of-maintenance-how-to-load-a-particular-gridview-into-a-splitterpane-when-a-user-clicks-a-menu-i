@@ -1,0 +1,31 @@
+@Html.DevExpress().Menu(
+    settingsMenu => {
+        settingsMenu.Name = "mainMenu";
+        settingsMenu.Items.Add("Products", "products").Target = "ContentUrlPane";
+        settingsMenu.Items.Add("Customers", "customers").Target = "ContentUrlPane";
+
+        settingsMenu.ClientSideEvents.ItemClick =
+            String.Format("function(s, e) {{ splitter.GetPaneByName('contentUrlPane').SetContentUrl('{0}?_GridViewName=' + e.item.name); }}", Url.Action("GridViewAction", "Home"));
+    }).GetHtml()
+<br />
+@Html.DevExpress().Splitter(
+    settings => {
+        settings.Name = "splitter";
+        settings.Height = 250;
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.ShowCollapseBackwardButton = true;
+        settings.ShowCollapseForwardButton = true;
+
+        settings.Panes.Add(pane => {
+            pane.Name = "TextPane";
+            pane.Size = 300;
+            pane.SetContent(() => {
+                ViewContext.Writer.Write("Click a Menu item to load the particular GridView");
+            });
+        });
+        settings.Panes.Add(pane => {
+            pane.Name = "contentUrlPane";
+            pane.ContentUrlIFrameName = "ContentUrlPane";
+            pane.ContentUrl = "about:blank";
+        });
+    }).GetHtml()
