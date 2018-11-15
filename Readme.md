@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [MyModel.cs](./CS/Models/MyModel.cs) (VB: [MyModel.vb](./VB/Models/MyModel.vb))
+* [GridViewAction.cshtml](./CS/Views/Home/GridViewAction.cshtml)
+* [GridViewPartialCustomers.cshtml](./CS/Views/Home/GridViewPartialCustomers.cshtml)
+* [GridViewPartialProducts.cshtml](./CS/Views/Home/GridViewPartialProducts.cshtml)
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # How to load a particular GridView into a SplitterPane when a user clicks a Menu item 
 
 
