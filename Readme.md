@@ -9,6 +9,9 @@
 * [Index.cshtml](./CS/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # How to load a particular GridView into a SplitterPane when a user clicks a Menu item 
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4332)**
+<!-- run online end -->
 
 
 <p>This example illustrates how to load a View that renders a PartialView with a particular GridView into the right SplitterPane. This action is performed when a user clicks an item. Here the are main steps:</p><br />
