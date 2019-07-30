@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # How to load a particular GridView into a SplitterPane when a user clicks a Menu item 
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4332)**
+**[[Run Online]](https://codecentral.devexpress.com/e4332/)**
 <!-- run online end -->
 
 
